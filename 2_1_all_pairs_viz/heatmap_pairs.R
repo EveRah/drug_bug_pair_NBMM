@@ -1,5 +1,11 @@
 # Generate heat map for pairs x countries data on temporal weighted linear trends
 
+# Create folder to store visualization PDFs and results files for compared analysis
+
+if (!file.exists("Results_viz_all_pairs")){
+  dir.create("Results_viz_all_pairs")
+}
+
 # Create list from dataframes of all pairs
   df_list = list(df_mockSpecies_mockAtb,
                  df_mockSpecies2_mockAtb2) #--> ENTER the name of other pairs

@@ -1,5 +1,10 @@
 ## Box plot of resistance rates distribution across all countries for one year, for all pairs
 
+# Create folder to store visualization PDFs and results files for compared analysis
+
+if (!file.exists("Results_viz_all_pairs")){
+  dir.create("Results_viz_all_pairs")
+}
 
 # Create list from dataframes of all pairs
 df_list = list(df_mockSpecies_mockAtb,

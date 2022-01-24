@@ -4,6 +4,12 @@
 
 df <- read.csv(paste0('ABR_data/', species, '_', name_atb_class,'_prepared.csv'))
 
+# Create folder to store visualization PDFs and results files
+
+if (!file.exists("Results_viz_data")){
+  dir.create("Results_viz_data")
+}
+
 #################################################################################
 
 # Statistics for one specific year

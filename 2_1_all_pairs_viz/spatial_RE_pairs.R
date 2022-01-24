@@ -1,5 +1,11 @@
 # PCV bar plot for all drug-bug pairs, for both spatial and temporal random effects (RE)
 
+# Create folder to store visualization PDFs and results files for compared analysis
+
+if (!file.exists("Results_viz_all_pairs")){
+  dir.create("Results_viz_all_pairs")
+}
+
 # Create list from dataframes of all pairs
 
   df_list = list(df_mockSpecies_mockAtb,

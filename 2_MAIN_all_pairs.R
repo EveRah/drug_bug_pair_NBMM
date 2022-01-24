@@ -31,7 +31,7 @@ library(heatmaply) #heatmap
 
 ## Set working environment correctly
 rm(list = ls())
-path = "/Users/evrahbe/Desktop/these/code/drug_bug_pair_NBMM"
+path = "/Users/evrahbe/Desktop/these/code/drug_bug_pair_NBMM" #--> CHANGE PATH
 setwd(path)
 
 ################################################################################

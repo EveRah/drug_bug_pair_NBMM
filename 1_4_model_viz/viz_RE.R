@@ -1,5 +1,10 @@
 # Visualization of null and multivariable model spatial random effects distribution
 
+# Create folder to store visualization PDFs and results files
+if (!file.exists("Results_viz_data")){
+  dir.create("Results_viz_data")
+}
+
 # Set working directory
 setwd(dir = paste0(path, '/Results_model'))
 

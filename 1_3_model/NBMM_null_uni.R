@@ -14,6 +14,11 @@ df <- read.csv(paste0('ABR_data/', species, '_', name_atb_class,'_prepared.csv')
     df$Region <- as.factor(df$Region)
     regions <- levels(df$Region)
 
+## Create folder to store model results files
+    
+    if (!file.exists("Results_model")){
+      dir.create("Results_model")
+    }
 
 ## Filter out countries with less than 2 years with non-0 resistant isolates for specific
 

@@ -31,7 +31,7 @@ library(hash) #library to create dictionaries
 
 ## Set working environment correctly
 rm(list = ls())
-path = "/Users/evrahbe/Desktop/these/code/drug_bug_pair_NBMM"
+path = "/Users/evrahbe/Desktop/these/code/drug_bug_pair_NBMM" #--> CHANGE PATH
 #path = ".."
 setwd(path)
 
