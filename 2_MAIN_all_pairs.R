@@ -8,46 +8,30 @@
 library(ggplot2)
 library(tidyr)
 library(dplyr)
-library(tidyverse) # str_replace_all()
+library(tidyverse) #str_replace_all()
 library(stringr)
-library(reshape2) #melt() function
+library(reshape2) #melt()
 library(countrycode) #get continent names form countries
-#maps
-  library(sf)
-  library(raster)
-  library(spData)
-  library(tmap) # for static and interactive maps
-  library(rworldmap) # maps
-library(ggthemes)
-library(corrplot) #nice correlograms
+library(imputeTS) #imputation (mean average)
+library(binom) #binomial proportion confidence intervals
 library(ggpmisc) #print regression equation for ggplot
-library(hardhat)
 library(lme4) #mixed-model package
 library(ciTools) #library to compute 95% CI around fitted values from lme4 models
-library(LaplacesDemon) #logit function
 library(MuMIn) #R-squared for GLMM (marginal and conditional)
 library(lattice) #dotplot()
-library(cAIC4) #stepcAIC()
-library(lmerTest) #step()
 library(DHARMa) #residuals analysis for gl(m)m
 library(car) #test for auto-correlation in the residuals + VIF
-library(patchwork) #laying out icely ggplots together
+library(patchwork) #laying out nicely ggplots together
 library(performance) #VIF calculation
-library(spaMM) #AR1 term with mixed models
-library(rnaturalearth) #get income level from each country
-#heatmaps
-  library(gplots) #library for heatmap
-  library(heatmaply) #interactive heatmap
-  library(egg) #ggheatmap
-library(patchwork) #laying out nicely ggplots together (making one figure with different ggplots)
+library(hash) #library to create dictionaries
 
-library(heatmaply) #interactive heatmap
+library(heatmaply) #heatmap
 
 ################################################################################
 
 ## Set working environment correctly
 rm(list = ls())
-path = "."
+path = "/Users/evrahbe/Desktop/these/code/drug_bug_pair_NBMM"
 setwd(path)
 
 ################################################################################
